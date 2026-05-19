@@ -1,0 +1,10 @@
+src/*.php                                          usr/share/php/Kint/
+src/Parser/*.php                                   usr/share/php/Kint/Parser/
+src/Renderer/*.php                                 usr/share/php/Kint/Renderer/
+src/Renderer/Text/*.php                            usr/share/php/Kint/Renderer/Text/
+src/Renderer/Rich/*.php                            usr/share/php/Kint/Renderer/Rich/
+src/Value/*.php                                    usr/share/php/Kint/Value/
+src/Value/Context/*.php                            usr/share/php/Kint/Value/Context/
+src/Value/Representation/*.php                     usr/share/php/Kint/Value/Representation/
+init.php                                           usr/share/php/Kint/
+composer.json                                      usr/share/php/Kint/

@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+PKG_VERSION := $(shell dpkg-parsechangelog -S Version | sed 's/~.*//')
+PKG_SOURCE  := $(shell jq -r '.name' composer.json)
+PKG_TYPE    := $(shell jq -r '.type' composer.json)
+
+INSTALL_PATH := debian/php-kint-php-kint/usr/share/php/Kint
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install
+	install -m 644 debian/autoload.php $(INSTALL_PATH)/autoload.php
+	sed -i "s|'unknown'|'$(PKG_SOURCE)'|" $(INSTALL_PATH)/autoload.php
+	sed -i "s|'0.0.0'|'$(PKG_VERSION)'|"  $(INSTALL_PATH)/autoload.php
+	sed -i "s|'library'|'$(PKG_TYPE)'|g"  $(INSTALL_PATH)/autoload.php
+	install -m0755 -d debian/php-kint-php-kint/usr/share/pkg-php-tools/autoloaders
+	echo 'kint-php kint Kint/autoload.php' > \
+	    debian/php-kint-php-kint/usr/share/pkg-php-tools/autoloaders/php-kint-php-kint
+
+override_dh_auto_test:
+	appstreamcli validate --pedantic --no-net \
+	    debian/php-kint-php-kint.metainfo.xml

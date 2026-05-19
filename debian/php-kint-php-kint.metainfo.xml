@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="console-application">
+  <id>php-kint-php-kint</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Kint</name>
+  <summary>A modern and powerful PHP debugging tool</summary>
+  <description>
+    <p>
+      Kint for PHP is a tool designed to present your debugging data in the
+      absolutely best way possible. It replaces var_dump, print_r and
+      debug_backtrace with a feature-rich, beautifully formatted output.
+    </p>
+  </description>
+  <url type="homepage">https://kint-php.github.io/kint/</url>
+  <url type="bugtracker">https://github.com/kint-php/kint/issues</url>
+  <releases>
+    <release version="6.1.0" date="2025-11-16"/>
+  </releases>
+</component>

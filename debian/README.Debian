@@ -1,0 +1,13 @@
+php-kint-php-kint for Debian
+============================
+
+This package provides the kint-php/kint library for use with the Debian
+PHP autoloader system.
+
+Autoloader: `/usr/share/php/Kint/autoload.php`
+
+Usage in PHP:
+
+    require_once '/usr/share/php/Kint/autoload.php';
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>

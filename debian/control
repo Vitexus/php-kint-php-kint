@@ -1,0 +1,25 @@
+Source: php-kint-php-kint
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ jq,
+ appstream,
+Standards-Version: 4.7.0
+Homepage: https://github.com/kint-php/kint
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/Vitexus/kint.git
+Vcs-Browser: https://github.com/Vitexus/kint
+
+Package: php-kint-php-kint
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ composer,
+ php-cli | php,
+Description: Kint - a modern and powerful PHP debugging tool
+ Kint for PHP is a tool designed to present your debugging data in the
+ absolutely best way possible. It replaces var_dump, print_r and debug_backtrace.
+ Debian packaging of the kint-php/kint Composer package.
