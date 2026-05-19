@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="console-application">
-  <id>php-kint-php-kint</id>
+<component type="generic">
+  <id>io.github.kintphp.kint</id>
   <metadata_license>MIT</metadata_license>
   <project_license>MIT</project_license>
   <name>Kint</name>
