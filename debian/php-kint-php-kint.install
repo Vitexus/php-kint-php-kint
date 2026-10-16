@@ -9,3 +9,5 @@ src/Value/Representation/*.php                     usr/share/php/Kint/Value/Repr
 init.php                                           usr/share/php/Kint/
 init_helpers.php                                   usr/share/php/Kint/
 composer.json                                      usr/share/php/Kint/
+resources/compiled/*.js                            usr/share/php/Kint/resources/compiled/
+resources/compiled/*.css                           usr/share/php/Kint/resources/compiled/
