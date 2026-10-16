@@ -15,6 +15,10 @@ spl_autoload_register(function (string $class): void {
     }
 });
 
+// Upstream composer "files" autoload: defines the KINT_DIR/KINT_PHP8x
+// constants, registers the Kint facade and the d()/s() helpers
+require_once '/usr/share/php/Kint/init.php';
+
 (function (): void {
     $versions = [];
     foreach (\Composer\InstalledVersions::getAllRawData() as $d) {

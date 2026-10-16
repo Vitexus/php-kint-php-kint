@@ -7,4 +7,5 @@ src/Value/*.php                                    usr/share/php/Kint/Value/
 src/Value/Context/*.php                            usr/share/php/Kint/Value/Context/
 src/Value/Representation/*.php                     usr/share/php/Kint/Value/Representation/
 init.php                                           usr/share/php/Kint/
+init_helpers.php                                   usr/share/php/Kint/
 composer.json                                      usr/share/php/Kint/
